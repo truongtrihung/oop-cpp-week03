@@ -3,43 +3,36 @@
 using namespace std;
 
 int main() {
-    const int N = 5; 
     
-    string names[N];  
-    string ids[N];    
-    string phones[N]; 
+    string name [20];
+    string ids[20];
+    string phones[20];
 
-    // Sinh viên 1 
-    names[0] = "Nguyen Van A";
-    ids[0]   = "23110001";
-    phones[0]= "0901234567";
+    for (int i = 0; i < 20; i++){
 
-    // Sinh viên 2 
-    names[1] = "Tran Thi B";
-    ids[1]   = "23110002";
-    phones[1]= "0912345678";
+        cout << "Nhap SV thu " << i + 1 << endl;
 
-    // Sinh viên 3 
-    names[2] = "Nguyen Tran C";
-    ids[2]   = "23110003";
-    phones[2]= "0901234667";
+        cout << "Ten sinh vien: ";
+        getline (cin, name[i]);
 
+        cout << "ID sinh vien: ";
+        getline (cin, ids[i]);
 
-    // Sinh viên 4 
-    names[3] = "Nguyen Tri D";
-    ids[3]   = "23110004";
-    phones[3]= "0901236567";
+        cout << "SDT sinh vien: ";
+        getline (cin, phones[i]);
+    }
 
-    // Sinh viên 5 
-    names[4] = "Nguyen Van E";
-    ids[4]   = "23110005";
-    phones[4]= "0901237567";    
+    cout << "=====STUDENT LIST=====" << endl;
+    for (int i = 0; i < 20; i++){
 
-    cout << "Student 1: " << names[0] << " - " << ids[0] << " - " << phones[0] << endl;
-    cout << "Student 2: " << names[1] << " - " << ids[1] << " - " << phones[1] << endl;
-    cout << "Student 3: " << names[2] << " - " << ids[2] << " - " << phones[2] << endl;
-    cout << "Student 4: " << names[3] << " - " << ids[3] << " - " << phones[3] << endl;
-    cout << "Student 5: " << names[4] << " - " << ids[4] << " - " << phones[4] << endl;
+        cout << "Sinh vien " << i + 1 << endl;
+
+        cout << "Ten      :" << name[i] << endl;
+
+        cout << "ID       :" << ids[i] << endl;
+
+        cout << "SDT      :" << phones[i] << endl;
+    }
 
     return 0;
 }
