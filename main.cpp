@@ -2,38 +2,51 @@
 #include <string>
 using namespace std;
 
-int main() {
-    
-    string name [20];
-    string ids[20];
-    string phones[20];
+int main(){
+    int n;
+    cout << "Type the number of students: ";
+    cin >> n;
 
-    for (int i = 0; i < 20; i++){
+    cin.ignore();   // remove all unnecessary '\n' remained
 
-        cout << "Nhap SV thu " << i + 1 << endl;
+    string names [20];
+    string ids [20];
+    string phones [20];
 
-        cout << "Ten sinh vien: ";
-        getline (cin, name[i]);
+    for (int i = 0; i < n; i++){
+        
+        cout << "Student " << i + 1 << endl;
 
-        cout << "ID sinh vien: ";
+        cout << "Name   :";
+        getline (cin, names[i]);
+
+        cout << "ID     :";
         getline (cin, ids[i]);
 
-        cout << "SDT sinh vien: ";
+        cout << "Phone  :";
         getline (cin, phones[i]);
     }
 
-    cout << "=====STUDENT LIST=====" << endl;
-    for (int i = 0; i < 20; i++){
+    cout << "============================" << endl;
+    cout << "        STUDENT LIST        " << endl;
+    cout << "============================" << endl;
 
-        cout << "Sinh vien " << i + 1 << endl;
+    for (int i = 0; i < n; i++){
+        
+        cout << "* Student " << i + 1 << endl;
 
-        cout << "Ten      :" << name[i] << endl;
+        cout << "Name   :" << names[i] << endl;
 
-        cout << "ID       :" << ids[i] << endl;
+        cout << "ID     :" << ids[i] << endl;
 
-        cout << "SDT      :" << phones[i] << endl;
+        cout << "Phone  :" << phones[i] << endl;
     }
+
+    cout << endl;
+
+    cout << "****************************" << endl;
+    cout << "Total students: " << n << endl;
+    cout << "****************************" << endl;
 
     return 0;
 }
-
