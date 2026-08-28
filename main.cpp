@@ -19,13 +19,13 @@ int main() {
     ids[1]   = "23110002";
     phones[1]= "0912345678";
 
-     // Sinh viên 3 
+    // Sinh viên 3 
     names[2] = "Nguyen Tran C";
     ids[2]   = "23110003";
     phones[2]= "0901234667";
 
 
- // Sinh viên 4 
+    // Sinh viên 4 
     names[3] = "Nguyen Tri D";
     ids[3]   = "23110004";
     phones[3]= "0901236567";
